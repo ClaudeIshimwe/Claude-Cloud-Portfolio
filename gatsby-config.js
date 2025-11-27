@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Claude Ishimwe | Azure Cloud Engineer`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    description: `Azure Cloud Consultant specializing in secure infrastructure, cloud migration, and DevOps automation.`,
     // Optional: Twitter account handle
     author: ``,
     // Optional: Github account URL
@@ -15,7 +15,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/claudeishimwe/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `Azure consultant specializing in designing and implementing secure, scalable cloud infrastructure that delivers business value. Focused on end-to-end cloud migrations, Infrastructure as Code, and DevOps automation to optimize costs and accelerate digital transformation.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -58,18 +58,27 @@ module.exports = {
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
-        name: 'Languages & Frameworks',
+        name: 'Azure Core Services',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+          'App Service, AKS, Virtual Machines, Storage, Key Vault, Azure Monitor',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        name: 'Infrastructure & Automation',
+        description: 'Terraform, Bicep, ARM Templates, Azure DevOps, GitHub Actions',
+    
       },
       {
-        name: 'Other',
+        name: 'Containers & Scripting',
+        description: 'Docker, Kubernetes, Helm, Python, Bash',
+      },
+       {
+        name: 'Monitoring & Optimization',
+        description: 'Azure Monitor, Grafana, Cost Optimization, Resource Rightsizing',
+      },
+      {
+        name: 'Security & Governance',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Microsoft Entra ID, Azure Policy, RBAC, Microsoft Defender for Cloud',
       },
     ],
   },
