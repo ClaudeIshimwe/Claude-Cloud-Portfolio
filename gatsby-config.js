@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Claude Ishimwe | Azure Cloud Engineer`,
     // Description that goes under your name in main bio
-    description: `Azure Cloud Consultant specializing in secure infrastructure, cloud migration, and DevOps automation.`,
+    description: `Azure Cloud Engineer specializing in secure infrastructure, cloud migration, and DevOps automation.`,
     // Optional: Twitter account handle
     author: ``,
     // Optional: Github account URL
@@ -15,43 +15,55 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/claudeishimwe/`,
     // Content of the About Me section
-    about: `Azure consultant specializing in designing and implementing secure, scalable cloud infrastructure that delivers business value. Focused on end-to-end cloud migrations, Infrastructure as Code, and DevOps automation to optimize costs and accelerate digital transformation.`,
+    about: `Azure Cloud Engineer specializing in designing and implementing secure, scalable cloud infrastructure that delivers business value. Focused on end-to-end cloud migrations, Infrastructure as Code, and DevOps automation to optimize costs and accelerate digital transformation.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
+        name: 'Onboard Automator',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
+          'Streamline and automate the process of onboarding a new employee into Azure AD and assigning necessary Azure resources.',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
-        name: 'ExtensionKit',
+        name: 'ShareSafely - File Share Web App',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
+          'A web application where users can securely upload files to Azure Blob Storage. Once uploaded, the application generates a unique, time-limited link for the user to share.',
         link: 'https://extensionkit.io/?ref=devfolio',
       },
       {
-        name: 'Another Cool Project',
+        name: 'VM Fleet Commander',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
+          'Implement an infrastructure-as-code approach to provision and manage virtual machines in Azure, using ARM templates and Bicep.',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
+      },
+       {
+        name: 'NetMaze Explorer',
+        description:
+          'Design a hybrid networking environment where on-premises networks connect securely to Azure resources using Azure's networking capabilities, ensuring secure data transition and effective resource access control.',
+        link: 'https://github.com/RyanFitzgerald/devfolio',
+      },
+       {
+        name: 'InsightScape',
+        description:
+          'Design a comprehensive monitoring dashboard to gain insights, troubleshoot, and ensure smooth operations for all your previous projects.',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
+        name: 'TRCS Ltd',
+        description: 'Azure Cloud Consultant, February 2023 - Present',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
+        name: 'Genesis Global',
+        description: 'Technical Business Analyst, September 2019 - December 2022',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
       {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
+        name: '',Orca Money
+        description: 'Business Systems Analyst, March 2017 - July 2019',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
