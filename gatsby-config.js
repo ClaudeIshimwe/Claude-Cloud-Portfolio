@@ -36,35 +36,28 @@ module.exports = {
           'Implement an infrastructure-as-code approach to provision and manage virtual machines in Azure, using ARM templates and Bicep.',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
-       {
+      {
         name: 'NetMaze Explorer',
         description:
-          'Design a hybrid networking environment where on-premises networks connect securely to Azure resources using Azure's networking capabilities, ensuring secure data transition and effective resource access control.',
+          'Design a hybrid networking environment where on-premises networks connect securely to Azure resources using Azure\'s networking capabilities, ensuring secure data transition and effective resource access control.',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
-       {
+      {
         name: 'InsightScape',
         description:
           'Design a comprehensive monitoring dashboard to gain insights, troubleshoot, and ensure smooth operations for all your previous projects.',
         link: 'https://github.com/RyanFitzgerald/devfolio',
       },
     ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
-    experience: [
+    // Certifications section
+    certifications: [
       {
-        name: 'TRCS Ltd',
-        description: 'Azure Cloud Consultant, February 2023 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Microsoft Certified: Azure Administrator Associate',
+        description: 'Validates skills in implementing, managing, and monitoring Azure solutions',
       },
       {
-        name: 'Genesis Global',
-        description: 'Technical Business Analyst, September 2019 - December 2022',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: '',Orca Money
-        description: 'Business Systems Analyst, March 2017 - July 2019',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'FinOps Certified Practitioner',
+        description: 'Demonstrates expertise in cloud financial management and cost optimization',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
@@ -77,13 +70,12 @@ module.exports = {
       {
         name: 'Infrastructure & Automation',
         description: 'Terraform, Bicep, ARM Templates, Azure DevOps, GitHub Actions',
-    
       },
       {
         name: 'Containers & Scripting',
         description: 'Docker, Kubernetes, Helm, Python, Bash',
       },
-       {
+      {
         name: 'Monitoring & Optimization',
         description: 'Azure Monitor, Grafana, Cost Optimization, Resource Rightsizing',
       },
@@ -91,6 +83,29 @@ module.exports = {
         name: 'Security & Governance',
         description:
           'Microsoft Entra ID, Azure Policy, RBAC, Microsoft Defender for Cloud',
+      },
+    ],
+    // Services section
+    services: [
+      {
+        name: 'Azure Cloud Architecture & Administration',
+        description: 'Design and manage scalable, secure Azure environments with optimized performance and reliability',
+      },
+      {
+        name: 'Cloud Migration & Modernization',
+        description: 'End-to-end migration planning and execution, modernizing legacy applications for cloud-native operations',
+      },
+      {
+        name: 'FinOps & Cloud Cost Optimization',
+        description: 'Implement FinOps practices to reduce cloud spend while maintaining performance and scalability',
+      },
+      {
+        name: 'Infrastructure as Code & DevOps Automation',
+        description: 'Automate deployment and management using Terraform, Bicep, and CI/CD pipelines',
+      },
+      {
+        name: 'Cloud Security & Governance',
+        description: 'Implement security best practices, compliance frameworks, and governance controls for Azure environments',
       },
     ],
   },
