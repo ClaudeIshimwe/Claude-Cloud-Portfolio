@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Claude Ishimwe | Azure Cloud Engineer`,
     // Description that goes under your name in main bio
-    description: `Azure Cloud Engineer specializing in secure infrastructure, cloud migration, and DevOps automation.`,
+    description: `Azure Cloud Engineer | DevOps & FinOps`,
     // Optional: Twitter account handle
     author: ``,
     // Optional: Github account URL
