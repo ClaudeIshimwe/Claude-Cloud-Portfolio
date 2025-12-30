@@ -11,7 +11,11 @@ const SectionCertifications = ({ certifications }) => {
         <SummaryItem
           key={item.name}
           name={item.name}
-          description={item.description}
+          description={
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              {item.description}
+            </a>
+          }
         />
       ))}
     </Section>
