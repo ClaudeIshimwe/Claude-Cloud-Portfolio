@@ -45,12 +45,12 @@ Specialized in DevOps practices and FinOps-driven cost optimization to improve r
       {
         name: 'Microsoft Certified: Azure Administrator Associate',
         description: 'Validates skills in implementing, managing, and monitoring Azure solutions',
-         link: "https://www.microsoft.com/en-us/learning/az-104.aspx"
+         link: "https://github.com/RyanFitzgerald/devfolio"
       },
       {
         name: 'FinOps Certified Practitioner',
         description: 'Demonstrates expertise in cloud financial management and cost optimization',
-         link: "https://www.microsoft.com/en-us/learning/az-104.aspx"
+         link: "https://github.com/RyanFitzgerald/devfolio"
       },
     ],
     skills: [
