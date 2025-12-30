@@ -1,67 +1,62 @@
 module.exports = {
   siteMetadata: {
-    // Site URL for when it goes live
     siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
-    // Your Name
     name: 'Claude Ishimwe',
-    // Main Site Title
     title: `Claude Ishimwe | Azure Cloud Engineer`,
-    // Description that goes under your name in main bio
     description: `Azure Cloud Engineer`,
-    // Optional: Twitter account handle
     author: ``,
-    // Optional: Github account URL
     github: `https://github.com/ClaudeIshimwe`,
-    // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/claudeishimwe/`,
-    // Content of the About Me section
+
     about: `Azure Cloud Engineer with strong experience in Azure infrastructure, CI/CD pipelines, and Infrastructure as Code.
 Specialized in DevOps practices and FinOps-driven cost optimization to improve reliability, scalability, and cloud spend efficiency.`,
-    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+
     projects: [
       {
         name: 'Onboard Automator',
         description:
           'Streamline and automate the process of onboarding a new employee into Azure AD and assigning necessary Azure resources.',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        link: 'https://github.com/ClaudeIshimwe/onboard-automator',
       },
       {
         name: 'ShareSafely - File Share Web App',
         description:
-          'A web application where users can securely upload files to Azure Blob Storage. Once uploaded, the application generates a unique, time-limited link for the user to share.',
-        link: 'https://extensionkit.io/?ref=devfolio',
+          'Secure file upload and sharing platform using Azure Blob Storage with time-limited access links.',
+        link: 'https://github.com/ClaudeIshimwe/sharesafely',
       },
       {
         name: 'VM Fleet Commander',
         description:
-          'Implement an infrastructure-as-code approach to provision and manage virtual machines in Azure, using ARM templates and Bicep.',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Infrastructure-as-Code solution to provision and manage Azure VMs using ARM templates and Bicep.',
+        link: 'https://github.com/ClaudeIshimwe/vm-fleet-commander',
       },
       {
         name: 'NetMaze Explorer',
         description:
-          'Design a hybrid networking environment where on-premises networks connect securely to Azure resources using Azure\'s networking capabilities, ensuring secure data transition and effective resource access control.',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Hybrid networking architecture connecting on-premises environments securely to Azure.',
+        link: 'https://github.com/ClaudeIshimwe/netmaze-explorer',
       },
       {
         name: 'InsightScape',
         description:
-          'Design a comprehensive monitoring dashboard to gain insights, troubleshoot, and ensure smooth operations for all your previous projects.',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Centralized monitoring and observability solution using Azure Monitor and Log Analytics.',
+        link: 'https://github.com/ClaudeIshimwe/insightscape',
       },
     ],
-    // Certifications section
+
     certifications: [
       {
-        name: 'Microsoft Certified: Azure Administrator Associate',
-        description: 'Validates skills in implementing, managing, and monitoring Azure solutions',
+        name: 'Microsoft Certified: Azure Administrator Associate (AZ-104)',
+        description:
+          'Validates skills in implementing, managing, and monitoring Azure environments.',
       },
       {
         name: 'FinOps Certified Practitioner',
-        description: 'Demonstrates expertise in cloud financial management and cost optimization',
+        description:
+          'Demonstrates expertise in cloud financial management and cost optimization.',
       },
     ],
-    // Optional: List your skills, they must have `name` and `description`.
+
     skills: [
       {
         name: 'Azure Core Services',
@@ -70,15 +65,18 @@ Specialized in DevOps practices and FinOps-driven cost optimization to improve r
       },
       {
         name: 'Infrastructure & Automation',
-        description: 'Terraform, Bicep, ARM Templates, Azure DevOps, GitHub Actions',
+        description:
+          'Terraform, Bicep, ARM Templates, Azure DevOps, GitHub Actions',
       },
       {
         name: 'Containers & Scripting',
-        description: 'Docker, Kubernetes, Helm, Python, Bash',
+        description:
+          'Docker, Kubernetes, Helm, Python, Bash',
       },
       {
         name: 'Monitoring & Optimization',
-        description: 'Azure Monitor, Grafana, Cost Optimization, Resource Rightsizing',
+        description:
+          'Azure Monitor, Cost Optimization, Resource Rightsizing',
       },
       {
         name: 'Security & Governance',
@@ -86,152 +84,16 @@ Specialized in DevOps practices and FinOps-driven cost optimization to improve r
           'Microsoft Entra ID, Azure Policy, RBAC, Microsoft Defender for Cloud',
       },
     ],
-    // Services section
-    services: [
-      {
-        name: 'Azure Cloud Architecture & Administration',
-        description: 'Design and manage scalable, secure Azure environments with optimized performance and reliability',
-      },
-      {
-        name: 'Cloud Migration & Modernization',
-        description: 'End-to-end migration planning and execution, modernizing legacy applications for cloud-native operations',
-      },
-      {
-        name: 'FinOps & Cloud Cost Optimization',
-        description: 'Implement FinOps practices to reduce cloud spend while maintaining performance and scalability',
-      },
-      {
-        name: 'Infrastructure as Code & DevOps Automation',
-        description: 'Automate deployment and management using Terraform, Bicep, and CI/CD pipelines',
-      },
-      {
-        name: 'Cloud Security & Governance',
-        description: 'Implement security best practices, compliance frameworks, and governance controls for Azure environments',
-      },
-    ],
   },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-              wrapperStyle: `margin: 0 0 30px;`,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        defaults: {
-          formats: [`auto`, `webp`],
-          placeholder: `dominantColor`,
-          quality: 80,
-        },
-      },
-    },
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-feed`,
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map((edge) => {
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
-                });
-              });
-            },
-            query: `
-              {
-                allMarkdownRemark(
-                  sort: { frontmatter: { date: DESC } }
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: '/rss.xml',
-            title: "Your Site's RSS Feed",
-          },
-        ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `ADD YOUR TRACKING ID HERE`, // Optional Google Analytics
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `devfolio`,
-        short_name: `devfolio`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`, // This color appears on mobile
-        display: `minimal-ui`,
-        icon: `src/images/icon.png`,
-      },
-    },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-feed`,
+    `gatsby-plugin-manifest`,
   ],
 };
