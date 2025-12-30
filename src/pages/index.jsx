@@ -6,17 +6,19 @@ import Header from '../components/header';
 import Layout from '../components/layout';
 import SectionAbout from '../components/section-about';
 import SectionBlog from '../components/section-blog';
+import SectionExperience from '../components/section-experience';
 import SectionProjects from '../components/section-projects';
 import SectionSkills from '../components/section-skills';
-import SectionCertifications from '../components/section-certifications';
+import SectionCertifications from '../components/SectionCertifications';
 import SEO from '../components/seo';
 
 const Index = ({ data }) => {
   const about = get(data, 'site.siteMetadata.about', false);
   const projects = get(data, 'site.siteMetadata.projects', false);
-  const certifications = get(data, 'site.siteMetadata.certifications', false);
-  const skills = get(data, 'site.siteMetadata.skills', false);
   const posts = data.allMarkdownRemark.edges;
+  const experience = get(data, 'site.siteMetadata.experience', false);
+  const skills = get(data, 'site.siteMetadata.skills', false);
+  const certifications = get(data, 'site.siteMetadata.certifications', false);
   const noBlog = !posts || !posts.length;
 
   return (
@@ -25,17 +27,12 @@ const Index = ({ data }) => {
       <Header metadata={data.site.siteMetadata} noBlog={noBlog} />
 
       {about && <SectionAbout about={about} />}
-
-      {projects && projects.length > 0 && (
-        <SectionProjects projects={projects} />
-      )}
-
+      {projects && projects.length > 0 && <SectionProjects projects={projects} />}
       {!noBlog && <SectionBlog posts={posts} />}
-
+      {experience && experience.length > 0 && <SectionExperience experience={experience} />}
       {certifications && certifications.length > 0 && (
         <SectionCertifications certifications={certifications} />
       )}
-
       {skills && skills.length > 0 && <SectionSkills skills={skills} />}
     </Layout>
   );
@@ -55,6 +52,11 @@ export const pageQuery = graphql`
         github
         linkedin
         projects {
+          name
+          description
+          link
+        }
+        experience {
           name
           description
           link
