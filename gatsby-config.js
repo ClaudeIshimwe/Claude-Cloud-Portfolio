@@ -7,7 +7,7 @@ module.exports = {
     // Main Site Title
     title: `Claude Ishimwe | Azure Cloud Engineer`,
     // Description that goes under your name in main bio
-    description: `Azure Cloud Engineer | DevOps & FinOps`,
+    description: `Azure Cloud Engineer`,
     // Optional: Twitter account handle
     author: ``,
     // Optional: Github account URL
@@ -15,7 +15,8 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/claudeishimwe/`,
     // Content of the About Me section
-    about: `Azure Cloud Engineer specializing in designing and implementing secure, scalable cloud infrastructure that delivers business value. Focused on end-to-end cloud migrations, Infrastructure as Code, and DevOps automation to optimize costs and accelerate digital transformation.`,
+    about: `Azure Cloud Engineer with strong experience in Azure infrastructure, CI/CD pipelines, and Infrastructure as Code.
+Specialized in DevOps practices and FinOps-driven cost optimization to improve reliability, scalability, and cloud spend efficiency.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
