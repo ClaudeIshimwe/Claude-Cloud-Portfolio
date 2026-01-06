@@ -3,12 +3,14 @@ module.exports = {
     siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
     name: 'Claude Ishimwe',
     title: `Claude Ishimwe | Azure Cloud Engineer`,
-    description: `Azure Cloud Engineer`,
+    description: `DevOps Engineer specializing in automated CI/CD pipelines, cloud infrastructure orchestration, and scalable platform reliability.`,
     author: ``,
     github: `https://github.com/ClaudeIshimwe`,
     linkedin: `https://www.linkedin.com/in/claudeishimwe/`,
-    about: `Azure Cloud Engineer with strong experience in Azure infrastructure, CI/CD pipelines, and Infrastructure as Code.
-Specialized in DevOps practices and FinOps-driven cost optimization to improve reliability, scalability, and cloud spend efficiency.`,
+    about: `I'm a Cloud DevOps engineer with focused experience building and scaling cost-efficient Azure environments. I specialize in integrating 
+    automation into cloud production systems, from Azure Pipelines to Bicep templates and FinOps-aligned resource management. I'm also 
+    passionate about open source, modern automation workflows, and fostering collaborative environments that help teams deliver reliable, 
+    high-availability deployments.`,
     projects: [
       {
         name: 'Onboard Automator',
